@@ -23,7 +23,7 @@ My Projects
 [Project_Detail][reco_personal_kurrant_detail]{: .btn .fs-5 .mb-4 .mb-md-0}
 [Github(Private)][reco_personal_kurrant_github]{: .btn .fs-5 .mb-4 .mb-md-0}
 
-[reco_personal_kurrant_detail]: /docs/project/reco_personal_kurrant/
+[reco_personal_kurrant_detail]: /docs/02_project/reco_personal_kurrant/
 [reco_personal_kurrant_github]: https://github.com/jackmappotion/reco_personal_kurrant
 
 > - 기업들의 식단현황을 기반으로 기업 식단배정을 자동화하는 시스템을 구축한다.
@@ -31,5 +31,5 @@ My Projects
 [Project_Detail][reco_corporation_kurrant_detail]{: .btn .fs-5 .mb-4 .mb-md-0}
 [Github(Private)][reco_corporation_kurrant_github]{: .btn .fs-5 .mb-4 .mb-md-0}
 
-[reco_corporation_kurrant_detail]: /docs/project/reco_corporation_kurrant/
+[reco_corporation_kurrant_detail]: /docs/02_project/reco_corporation_kurrant/
 [reco_corporation_kurrant_github]: https://github.com/jackmappotion/reco_corporation_kurrant
