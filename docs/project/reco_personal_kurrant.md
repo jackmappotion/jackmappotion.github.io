@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Project_3
+title: reco_personal_kurrant
 parent: Project
-nav_order: 3
 ---
-# Project_3
+# reco_personal_kurrant
 {: .no_toc }
-My Project_3
+My Project_1
 {: .fs-6 .fw-300 }
 
 ## Table of contents
