@@ -3,7 +3,7 @@ layout: default
 title: reco_corporation_kurrant
 parent: Project
 ---
-# reco_corporation_kurrant
+# 기업식단현황 ML기반 최적화 배정
 {: .no_toc }
 기업들의 식단현황을 기반으로 기업 식단배정을 자동화하는 시스템을 구축한다.
 {: .fs-6 .fw-300 }
