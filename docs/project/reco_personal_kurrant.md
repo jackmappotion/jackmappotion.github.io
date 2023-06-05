@@ -27,6 +27,12 @@ parent: Project
 개인화된 추천시스템을 구축하여 주문을 하지 않았을때 자동구매가 가능한 설정을 추가하여 소비자와 회사에게 도움이 되게한다.
 ```
 ## 어떻게
+- 1 ~ 4까지는 (기업식단현황 ML기반 최적화 배정)과 동일
 
+[기업식단현황 ML기반 최적화 배정][reco_corporation_kurrant_detail]{: .btn .fs-5 .mb-4 .mb-md-0}
+
+[reco_corporation_kurrant_detail]: /docs/project/reco_corporation_kurrant/
 
 ## 한계
+> - 백엔드를 제대로 이해하지 못한다면 순간순간 추천결과물을 만들 수 있을 뿐 지속적인 ml service 제공이 불가.
+> - 결국 개발이 뭔지 알아야함.
