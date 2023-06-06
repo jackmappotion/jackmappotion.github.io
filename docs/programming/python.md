@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Programming
-nav_order: 3
-has_children: true
+title: Python
+nav_order: 2
+parent: Programming
 ---
 
-# Programming
+# Python
 {: .no_toc }
 
 {: .fs-6 .fw-300 }
@@ -17,3 +17,5 @@ has_children: true
 {:toc}
 
 ---
+
+

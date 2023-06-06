@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Programming
-nav_order: 3
-has_children: true
+title: Problems
+nav_order: 99
+parent: Programming
 ---
 
-# Programming
+# Problems
 {: .no_toc }
-
+## 겪은 문제들을 기록합니다.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
