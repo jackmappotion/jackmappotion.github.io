@@ -88,8 +88,10 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "jackmappotion_GitHub":
+  "GitHub":
     - "//github.com/jackmappotion"
+  "About":
+    - "/jackmappotion"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
