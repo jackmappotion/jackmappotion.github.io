@@ -143,3 +143,7 @@ parent: Project
     - 실제로는 계속 쌓이는 log데이터들을 지속적으로 끌어오고 모델에 넣고 결과를 제공해야한다.
     - 이런 시스템을 잘 구현하기 위해서는 Backend 지식이 필수적이다.
     - Data engineer가 되는것이 목표지만 이러한 문제를 해결해 봄으로서 Backend를 공부하게되어 참 좋았다.
+2. 끝까지 살아남은 코드
+    - DataBasecontroller.py
+    - def get_distance(df_st,df_end):
+    - def address2coordinate(address):
