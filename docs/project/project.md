@@ -34,3 +34,6 @@ My Projects
 [reco_personal_kurrant_detail]: /docs/project/reco_personal_kurrant/
 [reco_personal_kurrant_github]: https://github.com/jackmappotion/reco_personal_kurrant
 
+> - 위의 모델들을 parameter 조율과 함께 운영팀에서 사용할 수 있도록 웹서비스를 구현한다.
+
+
