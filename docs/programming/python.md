@@ -18,4 +18,23 @@ parent: Programming
 
 ---
 
+## DefaultDict
 
+```
+from collections import defaultdict
+
+my_default_dict = defaultdict(lambda : [], dict())
+
+for i in range(10):
+    for j in range(10):
+        my_default_dict[i].append(j)
+
+뭐 작업하다 보면 defaultdict를 사용하게 될일이 종종 있는데
+
+이때 만약 key가 없으면 넣은 key값을 그대로 배출하고 싶을때가 있다
+-> 이때 defaultdict로 작업하기 좀 까다로운데
+class CustomDict(dict):
+    def __missing__(self,key):
+        return key
+요렇게 하나 만들어서 쓰니 유용하다
+```
