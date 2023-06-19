@@ -17,7 +17,6 @@ parent: Programming
 {:toc}
 
 ---
-
 ## DefaultDict
 
 ```
