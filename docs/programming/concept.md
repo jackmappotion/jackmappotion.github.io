@@ -54,3 +54,13 @@ ssh -i azure_id {azure_id_address}
 
 뭐 요런식으로 
 ```
+
+## WEB
+
+> ### WSGI
+> - Web Server Gateway Interface
+
+> ### ASGI
+> - Asynchronous Server Gateway Interface
+> - ASGI는 WSGI와 호환가능하다.
+> - 비동기호출 가능
