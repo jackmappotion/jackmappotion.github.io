@@ -37,3 +37,31 @@ class CustomDict(dict):
         return key
 요렇게 하나 만들어서 쓰니 유용하다
 ```
+
+## Django - pandas 
+```
+my_df = pd.DataFrame(...)
+
+def index(request):
+    my_df = pd.DataFrame(...)
+    context = {
+        "my_df_html":my_df.to_html()
+    }
+    return render(
+            request=request,
+            template_name="/my_template/template.html",
+            context=context)
+
+my_template/template.html
+
+{% extends 'base.html' %}
+{% block title %}
+    my web
+{% endblock %}
+{% block content %}
+
+{{ my_df_html | safe}}
+
+{% endblock %}
+
+```
