@@ -55,9 +55,6 @@ def index(request):
             context=context)
 ```
 
-
-```
-
 ## Airflow 
 
 ```
