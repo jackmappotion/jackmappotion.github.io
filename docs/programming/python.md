@@ -17,6 +17,7 @@ parent: Programming
 {:toc}
 
 ---
+
 ## DefaultDict
 
 ```
@@ -39,6 +40,7 @@ class CustomDict(dict):
 ```
 
 ## Django - pandas 
+
 ```
 my_df = pd.DataFrame(...)
 
@@ -51,18 +53,8 @@ def index(request):
             request=request,
             template_name="/my_template/template.html",
             context=context)
+```
 
-my_template/template.html
-
-{% extends 'base.html' %}
-{% block title %}
-    my web
-{% endblock %}
-{% block content %}
-
-{{ my_df_html | safe}}
-
-{% endblock %}
 
 ```
 
