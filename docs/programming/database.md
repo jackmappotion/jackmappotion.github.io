@@ -74,3 +74,24 @@ mysqld    28676           mysql   31u  IPv4 295471      0t0  TCP *:3306 (LISTEN)
 이렇게 포트가 열림
 ```
 
+## MySQL Dump script
+
+```
+mysqldump \
+  -h localhost \
+  -P 3306 \
+  -u admin \
+  -p6569 \
+  mysql_practice \
+  > \
+  $(date +%Y_%m_%d.sql)
+
+mysqldump \
+  -h localhost \
+  -P 3306 \
+  -u admin \
+  -p6569 \
+  mysql_practice \
+  > \
+  $PWD/$(date +%Y_%m_%d.sql)
+```
