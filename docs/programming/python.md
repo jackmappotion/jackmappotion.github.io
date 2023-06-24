@@ -105,3 +105,18 @@ task_0>>task_1 >> task_2
 ```
 df['col_1']=df['col_2'].map(my_dict).fillna(df['col_1'])
 ```
+
+## Pandas Rolling
+
+```
+rolling은 좀 난해한 느낌이 있는데,
+
+df["Open_diff"] = df["Open"].rolling(window=2).apply(lambda x: x.iloc[1] - x.iloc[0])
+df["High_diff"] = df["High"].rolling(window=2).apply(lambda x: x.iloc[1] - x.iloc[0])
+df["Low_diff"] = df["Low"].rolling(window=2).apply(lambda x: x.iloc[1] - x.iloc[0])
+df["Close_diff"] = df["Close"].rolling(window=2).apply(lambda x: x.iloc[1] - x.iloc[0])
+
+이렇게 되면 cur_row + 1 - cur_row 값을 계산한다.
+
+직과적으로 다가오지 않는데, 한번 쯤 체크해야할듯
+```
