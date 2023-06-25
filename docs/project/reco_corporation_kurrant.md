@@ -38,20 +38,22 @@ parent: Project
 1. 기업내부에 아직까지 데이터팀이 없는 상태에서 프로젝트를 시작하게 되었다.
     - 백엔드에서 사용하는 상용DB가 있지만 이 DB를 직접 활용하는것은 안전하지 않다.
     - 데이터엔지니어링을 위해 사용할 DB를 구축한다.
-    ```
+
+```
     DB Config
     location : Local 
     OS : Window
     Tool_DB : MySQL (상용 DB와 같은 종류의 DB를 사용한다.)
     
     ps. 사내 IP에 포트포워딩을 통해 내부 IP에서만 접속 가능하도록 하고 먼저 진행한다.
-    ```
+```
 
 ### 2. DataBase Analysis를 진행한다.
 1. 사용 DataBase는 정규화가 많이 진행되어 있으며 많은 Mapping이 되어있다.
     - 이를 적절하게 해석하여 Data-Engineer용 DB에 넣을 데이터 및 테이블을 설계한다.
     - 테이블의 description을 보아도 좋지만, Backend 자원과 지속적인 의사소통을 통해 설계를 진행한다.
-    ```
+
+```
     Ex)
     query = """
         SELECT
@@ -76,27 +78,28 @@ parent: Project
         )
         --
         이런식으로 테이블 명만으로는 이해하기 힘든 부분은 Backend 분들의 도움이 필요하다.
-    ```
+```
 
 
 ### 3. DataPipeline을 구축한다.
 1. 데이터 엔지니어링을 위한 DB를 구축했다면 상용 DB의 데이터중 필요한 데이터를 가져올 수 있는 DataPipeline을 구축해야 한다.
     - 수동이 아닌 자동으로 실행되는 DataPipeline을 구축하는것은 처음하는 일이었다.
     - Apache airflow를 통해 DataPipeline을 구축하기로 한다.
-    ```
+
+```
     PipeLine Config
     location : Cloud (NaverCloud)
     OS : Ubuntu 18.04
     Tool_Pipeline : Airflow
         schedule_interval : 0 5 * * 1 (매주 5AM 진행)
-    ```
+```
 
 ### 4. Data EDA를 진행한다.
 1. 데이터 엔지니어링을 통한 의사결정이 처음 진행되는 부분이 있기 때문에 아직까지는 데이터의 정합성이 상당히 부족했다.
     - 데이터 EDA를 통해 의심가는 데이터들에 대한 확인을 운영팀과 함께 진행한다.
     - 문제가 있는 부분은 데이터를 수정하거나, 비즈니스 문제가 엮여있을 경우 데이터 엔지니어링시 하드코딩 할 수 있도록 기록한다.
     
-    ```
+```
     EDA Checklist
     - 음식점
         - 음식점의 주소 
@@ -109,7 +112,7 @@ parent: Project
         - 기업의 Capacity(인원 수)
         - 기업의 상태 (계약중/ 계약종료)
     ... 
-    ```
+```
     
 ### 5. 문제의 특성에 따른 분리
 1. 큰 문제를 해결할 때 작은 문제들의 특성이 모두 동일 하지 않다.
