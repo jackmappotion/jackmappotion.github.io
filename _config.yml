@@ -1,4 +1,3 @@
-
 title: JackMapPotion
 description: Consistency
 baseurl: "" 
@@ -90,8 +89,6 @@ heading_anchors: true
 aux_links:
   "GitHub":
     - "//github.com/jackmappotion"
-  "About":
-    - "/docs/jackmappotion"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
