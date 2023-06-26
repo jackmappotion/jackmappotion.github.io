@@ -2,6 +2,7 @@
 layout: default
 title: Project
 nav_order: 2
+
 has_children: true
 ---
 
@@ -17,23 +18,12 @@ My Projects
 {:toc}
 
 ---
-## 오피스 푸드 정기 배달 플랫폼과 기업연계 프로젝트 진행
-> - 기업들의 식단현황을 기반으로 기업 식단배정을 자동화하는 시스템을 구축한다.
+## 커런트밀 
+[Project_Detail][project_kurrant]{: .btn .fs-5 .mb-4 .mb-md-0}
 
-[Project_Detail][reco_corporation_kurrant_detail]{: .btn .fs-5 .mb-4 .mb-md-0}
-[Github(Private)][reco_corporation_kurrant_github]{: .btn .fs-5 .mb-4 .mb-md-0}
+>   - ML 서버 구현 
+>   - 식단 자동화 구현
+>   - 유저 개인화 추천 구현
+>   - 배포 진행
 
-[reco_corporation_kurrant_detail]: /docs/project/reco_corporation_kurrant/
-[reco_corporation_kurrant_github]: https://github.com/jackmappotion/reco_corporation_kurrant
-
-> - 유저들의 주문정보를 기반으로 개인화된 음식 추천 시스템을 구축한다.
-
-[Project_Detail][reco_personal_kurrant_detail]{: .btn .fs-5 .mb-4 .mb-md-0}
-[Github(Private)][reco_personal_kurrant_github]{: .btn .fs-5 .mb-4 .mb-md-0}
-
-[reco_personal_kurrant_detail]: /docs/project/reco_personal_kurrant/
-[reco_personal_kurrant_github]: https://github.com/jackmappotion/reco_personal_kurrant
-
-> - 위의 모델들을 parameter 조율과 함께 운영팀에서 사용할 수 있도록 웹서비스를 구현한다.
-
-
+[project_kurrant]: /docs/project/kurrant/00_project_kurrant
