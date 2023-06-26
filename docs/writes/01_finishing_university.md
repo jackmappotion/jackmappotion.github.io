@@ -1,6 +1,6 @@
 ---
 layout: default
-title: finishing_univ
+title: finishing_university
 parent: Writes
 ---
 
