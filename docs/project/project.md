@@ -2,14 +2,12 @@
 layout: default
 title: Project
 nav_order: 2
-
 has_children: true
 ---
 
 # Projects
 {: .no_toc }
-My Projects
-{: .fs-6 .fw-300 }
+> - 진행한 프로젝트를 기록합니다.
 
 ## Table of contents
 {: .no_toc .text-delta }
