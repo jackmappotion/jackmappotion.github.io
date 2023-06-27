@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Python 유용한 dictionary 만들기
+title: Python 유용한 dictionary
 parent: Codes
 grand_parent : Programming
 ---
