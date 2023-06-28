@@ -1,7 +1,8 @@
 ---
 layout: default
-title: finishing_university
-parent: Writes
+title: 대학교를 졸업하며
+parent: Personal
+grand_parent : Writes
 ---
 
 ## Table of contents
@@ -176,7 +177,7 @@ parent: Writes
 
 ---
 
-## 마무리
+# 마무리
 
 이제 정말 사회에 나를 던져볼 순간이 온듯하다.
 

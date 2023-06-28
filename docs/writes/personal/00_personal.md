@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Writes
-nav_order: 5
+title: Personal
+parent: Writes
 has_children: true
 ---
-# Writes
+# Personal
 {: .no_toc }
-적어두고 싶은것을 적어둡니다.
+
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -14,5 +14,4 @@ has_children: true
 
 - TOC
 {:toc}
-
 ---
