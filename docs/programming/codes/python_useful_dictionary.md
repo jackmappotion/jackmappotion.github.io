@@ -4,7 +4,11 @@ title: Python 유용한 dictionary
 parent: Codes
 grand_parent : Programming
 ---
+# 유용한 딕셔너리
 
+- TOC
+{:toc}
+---
 ## defaultdict
 
 ```
