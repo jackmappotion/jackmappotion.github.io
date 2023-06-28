@@ -22,7 +22,8 @@ grand_parent : Programming
 
 
 ## How
-### 파이프라인(1)
+### Naive한 예시
+#### Naive 파이프라인 (1개)
 
 ```
 class MyClass1:
@@ -46,7 +47,7 @@ a
 b
 ```
 
-### 파이프라인(2)
+#### Naive 파이프라인(2)
 
 ```
 class MyClass1:
@@ -90,7 +91,7 @@ c
 d
 ```
 
-### 파이프라인(3)
+#### Naive 파이프라인(3)
 
 ```
 class MyClass1:
@@ -152,6 +153,67 @@ d
 MyClass2
 e
 f
+```
+
+
+### Data-Engnieering에서 pipeline 예시
+>   - 굳이 뭐 꼭 `__call__`에서 실행 해야하는것은 아님
+>       - `__init__`에서 실행하고 진행되어도 양호하다.
+
+```
+from sklearn.linear_model import LinearRegression
+
+
+class Preprocessor:
+    def __init__(self, df) -> None:
+        self.raw_df = df
+        self.df = df
+
+    def append_mean_col(self):
+        df = self.df
+        df["mean"] = df.mean(axis=1)
+        self.df = df
+        return None
+
+    def append_high_low_diff_col(self):
+        df = self.df
+        df["high_low_diff"] = df.apply(lambda x: x.high - x.low, axis=1)
+        self.df = df
+        return None
+
+    def __call__(self):
+        self.append_mean_col()
+        self.append_high_low_diff_col()
+        return self.df
+
+
+class Model(Preprocessor):
+    def __init__(self, df, model) -> None:
+        super().__init__(df)
+        self.df = super().__call__()
+        self.model = model
+        self.run_model()
+
+    def run_model(self):
+        model_obj = self.model()
+        df = self.df
+
+        feature_cols = [col for col in df.columns if col != "mean"]
+
+        x = df.loc[:, feature_cols]
+        y = df.loc[:, "mean"]
+        model_obj.fit(x, y)
+        self.model_obj = model_obj
+        return model_obj
+
+    def __call__(self, x_test):
+        model = self.model_obj
+        y_pred = model.predict(x_test)
+        return y_pred
+
+
+model = Model(df, LinearRegression)
+model([[1, 2, 3]])
 ```
 
 ## Conclusion
