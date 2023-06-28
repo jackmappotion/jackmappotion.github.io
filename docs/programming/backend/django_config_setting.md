@@ -4,6 +4,8 @@ title: Django config 세팅
 parent: Backend
 grand_parent : Programming
 ---
+## Django를 시작할때 체크할 config 세팅을 알아보자
+
 - TOC
 {:toc}
 ---
