@@ -170,6 +170,18 @@ pipline_config
         schedule_interval : 0 5 * * 1 (매주 5AM 진행)
 ```
 
+> - 추가적으로 Naver cloud에서 airflow를 진행하기에, local db를 cloud로 mirgrate한다.
+
+```
+    DB Config
+    location : Cloud
+    OS : Ubuntu 18.04
+    Tool_DB : MySQL (상용 DB와 같은 종류의 DB를 사용한다.)
+    
+    ps. 사내 IP에 포트포워딩을 통해 내부 IP에서만 접속 가능하도록 한다.
+```
+
+
 <hr>
 
 ### Data EDA 진행
