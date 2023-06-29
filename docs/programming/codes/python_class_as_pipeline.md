@@ -47,7 +47,7 @@ a
 b
 ```
 
-#### Naive 파이프라인(2)
+#### Naive 파이프라인(2개)
 
 ```
 class MyClass1:
@@ -91,7 +91,7 @@ c
 d
 ```
 
-#### Naive 파이프라인(3)
+#### Naive 파이프라인(3개)
 
 ```
 class MyClass1:
@@ -215,6 +215,35 @@ class Model(Preprocessor):
 model = Model(df, LinearRegression)
 model([[1, 2, 3]])
 ```
+## Naming Convention에 관련한 얘기
+### Generally 함수 
+
+```
+def my_function_a():
+    ...
+---
+함수는 snake_case
+```
+### Generally 클래스
+
+```
+class MyClassA:
+    def __init__(self,*args):
+        ...
+---
+클래스는 UpperCamelCase
+```
+### Pipeline 클래스
+>   - 내가 만든 concept의 클래스를 일반적인 객체지향을 위한 클래스와 다른 네이밍 컨벤션이 필요
+>       - WHY: class 이름이 길어짐
+```
+class MY_PIPELINE_CLASS:
+    ...
+---
+내가 사용할 
+파이프라인을 위한 클래스는 SCREAM_SNAKE_CASE를 사용하겠다.
+```
+
 
 ## Conclusion
 >   - 이런식으로 파이프라인 구성한다면 데이터 엔지니어링에선
