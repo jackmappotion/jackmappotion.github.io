@@ -7,6 +7,7 @@ has_children: true
 # Kurrant
 {: .no_toc }
 > - 단체배송 서비스 플랫폼
+> - 2023.01.02 ~ 2023.06.30
 
 {: .fs-6 .fw-300 }
 
